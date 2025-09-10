@@ -159,15 +159,27 @@ h3 {
 /* -- HEADER STYLES -- */
 
 header {
-    padding: 30px;
+    padding: 20px;
     background-color: var(--red);
 }
 
 h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 /* -- MAIN STYLES -- */
 
+main {
+    padding: 10px 25px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 /* -- HOW TO USE SECTION -- */
+
+/* -- ATTACK AND DEFENSE INPUT SECTION */
