@@ -135,7 +135,7 @@ table {
 }
 
 :root {
-    --yellow: #c2c819;
+    --yellow: #e7eb64;
     --dark-gray: #27292b;
     --red: #80110f;
     --white: #FFFEF6;
@@ -183,3 +183,39 @@ h2 {
 /* -- HOW TO USE SECTION -- */
 
 /* -- ATTACK AND DEFENSE INPUT SECTION */
+#atk-input-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+
+#def-selects {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+    color: var(--yellow);
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 150px;
+    height: 30px;
+    line-height: 150px;
+}

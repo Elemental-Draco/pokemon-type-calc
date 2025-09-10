@@ -27,7 +27,7 @@
         you plan to use. Then pick the type (or types) of the opposing Pokemon. The results will update below, telling
         you how effective the move is and how much the damage will be increased or decreased! </p>
     </section>
-    <section id="atk-input">
+    <section id="atk-input-section">
       <h3>Step 1 - Your Attack</h3>
       <label for="atk-input">Attacking Type</label>
       <select name="atk-input" id="atk-input">
@@ -39,20 +39,25 @@
 
     <section id="def-inputs">
       <h3>Step 2 - Defending Pokemon Type(s)</h3>
-      <label for="def-input-1">Defending Type 1</label>
-      <select name="def-input-1" id="def-input-1">
-        <option value="Water" selected>Water</option>
-        <option value="Fire">Fire</option>
-        <option value="Grass">Grass</option>
-      </select>
-
-      <label for="def-input-1">Defending Type 2 (optional)</label>
-      <select name="def-input-2" id="def-input-2">
-        <option value="none" selected>none</option>
-        <option value="Water">Water</option>
-        <option value="Fire">Fire</option>
-        <option value="Grass">Grass</option>
-      </select>
+      <div id="def-selects">
+        <div class="def-input">
+          <label for="def-input-1">Defending Type 1</label>
+          <select name="def-input-1" id="def-input-1">
+            <option value="Water" selected>Water</option>
+            <option value="Fire">Fire</option>
+            <option value="Grass">Grass</option>
+          </select>
+        </div>
+        <div class="def-input">
+          <label for="def-input-2">Defending Type 2 (optional)</label>
+          <select name="def-input-2" id="def-input-2">
+            <option value="none" selected>none</option>
+            <option value="Water">Water</option>
+            <option value="Fire">Fire</option>
+            <option value="Grass">Grass</option>
+          </select>
+        </div>
+      </div>
     </section>
 
     <section id="effectiveness">
