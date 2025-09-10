@@ -133,3 +133,41 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+:root {
+    --yellow: #c2c819;
+    --dark-gray: #27292b;
+    --red: #80110f;
+    --white: #FFFEF6;
+    --blue: #4b84aa;
+}
+
+/* -- GLOBAL STYLES -- */
+
+body {
+    color: var(--white);
+    background-color: var(--dark-gray);
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Itim";
+}
+
+/* -- HEADER STYLES -- */
+
+header {
+    padding: 30px;
+    background-color: var(--red);
+}
+
+h1 {
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+/* -- MAIN STYLES -- */
+
+/* -- HOW TO USE SECTION -- */
