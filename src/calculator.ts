@@ -5,7 +5,7 @@ const damageMessages = {
     superEffective: "It's Super Effective!", 
     notVeryEffective: "It's Not Very Effective...",
     immune: "It Has No Effect...",
-    neutral: "It Deals Nuetral Damage.",
+    neutral: "It Deals Neutral Damage.",
 }
 
 // function to compare each type 
@@ -24,10 +24,14 @@ function compareDamage(attack:string, defender:Type): number {
     }
 }
 
-export function calculateEffectiveness(attacker:string, firstDef:Type, secondDef:Type) :string {
-    let damage:number = 1;
-    damage *= compareDamage(attacker, firstDef);
-    damage *= compareDamage(attacker, secondDef);
+export function calculateEffectiveness(attacker:string, firstDef:Type, secondDef?:Type) :string {
+    
+    let damage = compareDamage(attacker, firstDef);
+
+    if(secondDef) {
+        damage *= compareDamage(attacker, secondDef);
+    }
+   
     
     if (damage == 0) {
         return damageMessages.immune;

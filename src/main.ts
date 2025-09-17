@@ -3,3 +3,5 @@ import { calculateEffectiveness } from "./calculator";
 
 
 console.log(calculateEffectiveness("Psychic", PokemonTypes.Dark, PokemonTypes.Dragon))
+
+console.log(calculateEffectiveness("Fire", PokemonTypes.Bug))
