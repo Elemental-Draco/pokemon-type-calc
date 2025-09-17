@@ -1,10 +1,10 @@
-interface Type {
+export interface Type {
     weakness: Set<string>;
     resistance: Set<string>;
     immunity?: Set<string>;
 }
 
-const Types = [
+export const Types = [
   "Normal","Fire","Water","Grass","Electric","Rock","Ground","Ice","Steel",
   "Bug","Fairy","Ghost","Dark","Psychic","Fighting","Dragon","Flying","Poison",
 ] as const; 
