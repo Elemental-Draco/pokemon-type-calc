@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Type Effectiveness Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <script>let FF_FOUC_FIX;</script>
+  <script type="module" crossorigin src="/pokemon-type-calc/assets/index-BVGU9-nH.js"></script>
+  <link rel="stylesheet" crossorigin href="/pokemon-type-calc/assets/index-CUDG57Kc.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pokemon Type Effectiveness Calculator</h1>
+  </header>
+  <main>
+    <section id="info">
+      <h2>How to Use</h2>
+      <p>This calculator will tell you how effectve your Pokemon's move will be agaisnt the opponent you are attacking,
+        based on the attack itself and the defending Pokemon's type. To use the calculator, first choose the attack type
+        you plan to use. Then pick the type (or types) of the opposing Pokemon. The results will update below, telling
+        you how effective the move is and how much the damage will be increased or decreased! </p>
+    </section>
+    <section id="atk-input-section">
+      <h3>Step 1 - Your Attack</h3>
+      <label for="atk-input">Attacking Type</label>
+      <select id="atk-input">
+        <option value="Normal">Normal</option>
+        <option value="Fire">Fire</option>
+        <option value="Water">Water</option>
+        <option value="Grass">Grass</option>
+        <option value="Electric">Electric</option>
+        <option value="Rock">Rock</option>
+        <option value="Ground">Ground</option>
+        <option value="Ice">Ice</option>
+        <option value="Steel">Steel</option>
+        <option value="Bug">Bug</option>
+        <option value="Fairy">Fairy</option>
+        <option value="Ghost">Ghost</option>
+        <option value="Dark">Dark</option>
+        <option value="Psychic">Psychic</option>
+        <option value="Fighting">Fighting</option>
+        <option value="Dragon">Dragon</option>
+        <option value="Flying">Flying</option>
+        <option value="Poison">Poison</option>
+      </select>
+    </section>
+
+    <section id="def-inputs">
+      <h3>Step 2 - Defending Pokemon Type(s)</h3>
+      <div id="def-selects">
+        <div class="def-input">
+          <label for="def-input-1">Defending Type 1</label>
+          <select name="def-input-1" id="def-input-1">
+            <option value="Normal">Normal</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Grass">Grass</option>
+            <option value="Electric">Electric</option>
+            <option value="Rock">Rock</option>
+            <option value="Ground">Ground</option>
+            <option value="Ice">Ice</option>
+            <option value="Steel">Steel</option>
+            <option value="Bug">Bug</option>
+            <option value="Fairy">Fairy</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dark">Dark</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Flying">Flying</option>
+            <option value="Poison">Poison</option>
+          </select>
+        </div>
+        <div class="def-input">
+          <label for="def-input-2">Defending Type 2</label>
+          <select name="def-input-2" id="def-input-2">
+            <option value="" selected>— None —</option>
+            <option value="Normal">Normal</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Grass">Grass</option>
+            <option value="Electric">Electric</option>
+            <option value="Rock">Rock</option>
+            <option value="Ground">Ground</option>
+            <option value="Ice">Ice</option>
+            <option value="Steel">Steel</option>
+            <option value="Bug">Bug</option>
+            <option value="Fairy">Fairy</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dark">Dark</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Flying">Flying</option>
+            <option value="Poison">Poison</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section id="effectiveness">
+      <h3>Effectiveness Results!</h3>
+      <p id="effectiveness-result">Its Super Effective! (2x)</p>
+    </section>
+  </main>
+  <footer>
+    <p>This site was made for educational/recreational purposes, and is not affiliated with Nintendo or the Pokemon
+      Company.</p>
+    <p>Jadias Washington | Elemental Draco 2025</p>
+  </footer>
+</body>
+
+</html>
