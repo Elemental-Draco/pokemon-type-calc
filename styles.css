@@ -199,7 +199,7 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 
@@ -209,7 +209,7 @@ h2 {
     text-align: center;
     justify-content: space-around;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 h3 {
@@ -227,22 +227,27 @@ label {
 }
 
 select {
-    width: 150px;
-    height: 30px;
-    line-height: 150px;
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 
 /* -- EFFECTIVENESS SECTION -- */
 
 #effectiveness p {
     text-align: center;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#effectiveness h3 {
+    font-size: 1.9rem;
 }
 
 #effectiveness {
-    padding-bottom: 50px;
-    border: 5px solid var(--red);
+    padding-bottom: 40px;
+    border: 10px solid var(--red);
     max-width: 800px;
     margin: 0 auto;
 }

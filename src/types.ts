@@ -9,7 +9,7 @@ export const Types = [
   "Bug","Fairy","Ghost","Dark","Psychic","Fighting","Dragon","Flying","Poison",
 ] as const; 
 
-type PokemonType = typeof Types[number];
+export type PokemonType = typeof Types[number];
 
 export const PokemonTypes: Record<PokemonType, Type> = {
   Normal: {
