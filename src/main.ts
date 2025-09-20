@@ -1,6 +1,6 @@
 import 'choices.js/public/assets/styles/choices.min.css';
-import Choices from 'choices.js';
-import {PokemonTypes, Types } from "./types";
+// import Choices from 'choices.js';
+import {PokemonTypes} from "./types";
 import type { PokemonType } from './types';
 import { calculateEffectiveness } from "./calculator";
 
