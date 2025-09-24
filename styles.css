@@ -146,12 +146,21 @@ table {
 
 body {
     color: var(--white);
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     font-family: "Nunito Sans", Arial, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('./public/falling-pokeballs-3qsnk7e12tvlwsau.webp');
+    background-size: contain;
+    opacity: 0.85;
 }
 
 h1,
@@ -178,6 +187,9 @@ main {
     padding: 10px 25px;
     line-height: 1.2;
     flex: 1;
+    background-color: var(--dark-gray);
+    width: auto;
+    margin: 0 auto;
 }
 
 main>section {
