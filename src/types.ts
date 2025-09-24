@@ -4,6 +4,7 @@ export interface Type {
     immunity?: Set<string>;
 }
 
+// list of all pokemon types
 export const Types = [
   "Normal","Fire","Water","Grass","Electric","Rock","Ground","Ice","Steel",
   "Bug","Fairy","Ghost","Dark","Psychic","Fighting","Dragon","Flying","Poison",
@@ -11,6 +12,7 @@ export const Types = [
 
 export type PokemonType = typeof Types[number];
 
+// every type and their resist/weakness
 export const PokemonTypes: Record<PokemonType, Type> = {
   Normal: {
     weakness: new Set(["Fighting"]),

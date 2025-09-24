@@ -1,6 +1,6 @@
-// import { Types} from "./types"
 import type { Type } from "./types"
 
+// messages that will be shown to user based on type effectiveness
 const damageMessages = {
     superEffective: "It's Super Effective!", 
     notVeryEffective: "It's Not Very Effective...",
@@ -24,15 +24,17 @@ function compareDamage(attack:string, defender:Type): number {
     }
 }
 
+
 export function calculateEffectiveness(attacker:string, firstDef:Type, secondDef?:Type) :string {
     
     let damage = compareDamage(attacker, firstDef);
 
+    // if a second defender exists, check it
     if(secondDef) {
         damage *= compareDamage(attacker, secondDef);
     }
    
-    
+    // return message based on effectiveness
     if (damage == 0) {
         return damageMessages.immune;
     }

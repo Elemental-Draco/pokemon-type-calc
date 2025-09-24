@@ -146,7 +146,6 @@ table {
 
 body {
     color: var(--white);
-    background-color: var(--white);
     font-family: "Nunito Sans", Arial, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -271,4 +270,39 @@ footer {
     text-align: center;
     padding: 20px;
     line-height: 2;
+}
+
+.animated-text {
+    --flash-color: var(--white);
+    animation: color-fade 1.5s ease-out;
+}
+
+@keyframes color-fade {
+    0% {
+        color: var(--white);
+    }
+
+    50% {
+        color: var(--flash-color);
+    }
+
+    100% {
+        color: var(--white);
+    }
+}
+
+.animated-super {
+    --flash-color: green;
+}
+
+.animated-not-very {
+    --flash-color: red;
+}
+
+.animated-immune {
+    --flash-color: blue;
+}
+
+.animated-neutral {
+    --flash-color: gray;
 }

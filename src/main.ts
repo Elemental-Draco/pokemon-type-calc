@@ -1,5 +1,4 @@
 import 'choices.js/public/assets/styles/choices.min.css';
-// import Choices from 'choices.js';
 import {PokemonTypes} from "./types";
 import type { PokemonType } from './types';
 import { calculateEffectiveness } from "./calculator";
@@ -11,12 +10,12 @@ const defenseInputTwo = document.getElementById("def-input-2") as HTMLSelectElem
 const effectivenessHolder = document.getElementById("effectiveness-result") as HTMLParagraphElement;
 const selects = document.querySelectorAll("select");
 
-// console.log(calculateEffectiveness(attackInput.value, PokemonTypes.Normal))
+// update effectiveness upon page loading
 window.addEventListener('load', () => {
     updateResults();
-    
 })
 
+// each select will update the result after changing
 selects.forEach(select => {
     select.addEventListener('change', () => {
         updateResults();
@@ -29,5 +28,24 @@ function updateResults ():void {
     const defender1 = PokemonTypes[type1 as PokemonType]
     const defender2 = PokemonTypes[type2 as PokemonType]
 
-    effectivenessHolder.innerText = calculateEffectiveness(attackInput.value, defender1, defender2)
+    const damageResult: string = calculateEffectiveness(attackInput.value, defender1, defender2)
+
+    // reset classlist and set correct text
+    effectivenessHolder.classList = "";
+    effectivenessHolder.offsetWidth; 
+    effectivenessHolder.innerText = damageResult;
+
+    //apply correct animation color
+    if(damageResult === "It's Super Effective!") {
+        effectivenessHolder.classList.add("animated-text", "animated-super");
+    }
+    else if(damageResult === "It's Not Very Effective...") {
+    effectivenessHolder.classList.add("animated-text", "animated-not-very");
+    }
+    else if(damageResult === "It Has No Effect...") {
+        effectivenessHolder.classList.add("animated-text", "animated-immune");
+    }
+    else {
+        effectivenessHolder.classList.add("animated-text", "animated-neutral");
+    }
 }
