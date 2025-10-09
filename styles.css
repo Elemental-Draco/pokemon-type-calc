@@ -173,6 +173,7 @@ h3 {
 header {
     padding: 20px;
     background-color: var(--red);
+    max-width: 100%;
 }
 
 h1 {
@@ -196,6 +197,12 @@ main>section {
     margin: 0 auto;
 }
 
+main>img {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -204,6 +211,10 @@ h2 {
 }
 
 /* -- HOW TO USE SECTION -- */
+
+#info p {
+    line-height: 1.5;
+}
 
 /* -- ATTACK AND DEFENSE INPUT SECTION */
 #atk-input-section {
@@ -270,6 +281,7 @@ footer {
     text-align: center;
     padding: 20px;
     line-height: 2;
+    max-width: 100%;
 }
 
 .animated-text {
